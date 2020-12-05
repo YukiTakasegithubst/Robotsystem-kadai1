@@ -4,22 +4,29 @@
 
 授業のプログラムからの変更点
 
-LEDを1個から3個に増やした。
+・LEDを1個から3個に増やした。
 
+・抵抗の数を1個から3個に増やした。
 
 使用した部品
 
-・Raspberry Pi4
+・Raspberry Pi4(ubuntu 20.04)
 
 ・抵抗の200~300[Ω]を3個
 
 ・LEDを3個
+
+・ブレッドボード
+
+・ジャンパー線
 
 
 GPIOは25, 16, 6を使用
 
 
 LEDの光らせ方<以下の順に操作>
+
+・githubからデータをクローン
 
 ・make
  
@@ -30,3 +37,14 @@ LEDの光らせ方<以下の順に操作>
 ・echo 1 > /dev/myled0  //LEDが3個光る
  
 ・echo 0 > /dev/myled0  //LEDが3個消える
+
+
+プログラムを変更したいときの操作
+
+myled.cを変更したい
+
+vi myled.c
+
+Makefileを変更したい
+
+vi Makefile
