@@ -8,9 +8,10 @@
 
 ・抵抗の数を1個から3個に増やした。
 
+
 使用した部品
 
-・Raspberry Pi4(ubuntu 20.04)
+・Raspberry Pi4(OS:ubuntu 20.04)
 
 ・抵抗の200~300[Ω]を3個
 
@@ -21,7 +22,13 @@
 ・ジャンパー線
 
 
-GPIOは25, 16, 6を使用
+配線
+
+・GPIOは25, 16, 6を使用してそれぞれLEDのアノードとつながるように配線する。
+
+・その時にLED1個に対して抵抗が1個挟まるようにする。
+
+・カソードはRaspberry Pi4のGroundとつなぐ。
 
 
 LEDの光らせ方<以下の順に操作>
@@ -39,12 +46,12 @@ LEDの光らせ方<以下の順に操作>
 ・echo 0 > /dev/myled0  //LEDが3個消える
 
 
-プログラムを変更したいときの操作
+プログラムを変更したいときの操作<テキストエディター：vim>
 
 myled.cを変更したい
 
-vi myled.c
+・vi myled.c
 
 Makefileを変更したい
 
-vi Makefile
+・vi Makefile
