@@ -39,9 +39,9 @@
 
 ##myled.cを変更したい
 
-・vi myled.c
+```vi myled.c```
 
 
 ##Makefileを変更したい
 
-・vi Makefile
+```vi Makefile```
