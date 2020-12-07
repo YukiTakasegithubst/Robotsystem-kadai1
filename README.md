@@ -27,11 +27,11 @@
 ### LEDの光らせ方<以下の順に操作>
 
 - githubからデータをクローン  
-- make  
-- sudo insmod myled.ko  //失敗したら sudo rmmod myled を実行後、再試行  
-- sudo chmod 666 /dev/myled0  
-- echo 1 > /dev/myled0  //LEDが3個光る  
-- echo 0 > /dev/myled0  //LEDが3個消える
+- ```make```  
+- ```sudo insmod myled.ko```  //失敗したら sudo rmmod myled を実行後、再試行  
+- ```sudo chmod 666 /dev/myled0```  
+- ```echo 1 > /dev/myled0```  //LEDが3個光る  
+- ```echo 0 > /dev/myled0```  //LEDが3個消える
 
 
 ### プログラムを変更したいときの操作<テキストエディター：vim>
